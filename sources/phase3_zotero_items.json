@@ -1,0 +1,2573 @@
+[
+    {
+        "key": "STKFXPT3",
+        "version": 55,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/STKFXPT3",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/STKFXPT3",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Selvaraju et al.",
+            "parsedDate": "2017",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "STKFXPT3",
+            "version": 55,
+            "itemType": "conferencePaper",
+            "title": "Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization",
+            "date": "2017",
+            "DOI": "10.1109/ICCV.2017.74",
+            "url": "https://openaccess.thecvf.com/content_ICCV_2017/papers/Selvaraju_Grad-CAM_Visual_Explanations_ICCV_2017_paper.pdf",
+            "pages": "618–626",
+            "proceedingsTitle": "2017 IEEE International Conference on Computer Vision (ICCV)",
+            "creators": [
+                {
+                    "firstName": "Ramprasaath R.",
+                    "lastName": "Selvaraju",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Michael",
+                    "lastName": "Cogswell",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Abhishek",
+                    "lastName": "Das",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Ramakrishna",
+                    "lastName": "Vedantam",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Devi",
+                    "lastName": "Parikh",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Dhruv",
+                    "lastName": "Batra",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T01:08:42Z",
+            "dateModified": "2026-08-30T01:08:42Z"
+        }
+    },
+    {
+        "key": "VQRWTCHN",
+        "version": 55,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/VQRWTCHN",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/VQRWTCHN",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "⁨Abnar⁩ and ⁨Zuidema⁩",
+            "parsedDate": "2020",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "VQRWTCHN",
+            "version": 55,
+            "itemType": "conferencePaper",
+            "title": "Quantifying Attention Flow in Transformers",
+            "date": "2020",
+            "DOI": "10.18653/v1/2020.acl-main.385",
+            "url": "https://aclanthology.org/2020.acl-main.385.pdf",
+            "publisher": "Association for Computational Linguistics",
+            "pages": "4190–4197",
+            "proceedingsTitle": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+            "creators": [
+                {
+                    "firstName": "Samira",
+                    "lastName": "Abnar",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Willem",
+                    "lastName": "Zuidema",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T01:08:42Z",
+            "dateModified": "2026-08-30T01:08:42Z"
+        }
+    },
+    {
+        "key": "UBGE2XUB",
+        "version": 44,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/UBGE2XUB",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/UBGE2XUB",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Dorafshan et al.",
+            "parsedDate": "2018",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "UBGE2XUB",
+            "version": 44,
+            "itemType": "journalArticle",
+            "title": "SDNET2018: An Annotated Image Dataset for Non-Contact Concrete Crack Detection Using Deep Convolutional Neural Networks",
+            "date": "2018",
+            "DOI": "10.1016/j.dib.2018.11.015",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6247444/",
+            "volume": "21",
+            "pages": "1664–1668",
+            "publicationTitle": "Data in Brief",
+            "creators": [
+                {
+                    "firstName": "Sattar",
+                    "lastName": "Dorafshan",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Robert J.",
+                    "lastName": "Thomas",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Marc",
+                    "lastName": "Maguire",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "binary-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "concrete-crack",
+                    "type": 1
+                },
+                {
+                    "tag": "dataset",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:14Z",
+            "dateModified": "2026-08-30T00:06:14Z"
+        }
+    },
+    {
+        "key": "9RL32V4L",
+        "version": 44,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/9RL32V4L",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/9RL32V4L",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Zhang et al.",
+            "parsedDate": "2016",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "9RL32V4L",
+            "version": 44,
+            "itemType": "conferencePaper",
+            "title": "Road Crack Detection Using Deep Convolutional Neural Network",
+            "date": "2016",
+            "DOI": "10.1109/ICIP.2016.7533052",
+            "url": "https://doi.org/10.1109/ICIP.2016.7533052",
+            "pages": "3708–3712",
+            "proceedingsTitle": "2016 IEEE International Conference on Image Processing",
+            "creators": [
+                {
+                    "firstName": "Lei",
+                    "lastName": "Zhang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Fan",
+                    "lastName": "Yang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Yimin Daniel",
+                    "lastName": "Zhang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Ying Julie",
+                    "lastName": "Zhu",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "binary-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "cnn",
+                    "type": 1
+                },
+                {
+                    "tag": "concrete-crack",
+                    "type": 1
+                },
+                {
+                    "tag": "dataset",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "manual-pdf-needed",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:14Z",
+            "dateModified": "2026-08-30T00:06:14Z"
+        }
+    },
+    {
+        "key": "B9X3LZ38",
+        "version": 44,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/B9X3LZ38",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/B9X3LZ38",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Yadav et al.",
+            "parsedDate": "2024",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "B9X3LZ38",
+            "version": 44,
+            "itemType": "journalArticle",
+            "title": "Bridging Convolutional Neural Networks and Transformers for Efficient Crack Detection in Concrete Building Structures",
+            "date": "2024",
+            "DOI": "10.3390/s24134257",
+            "url": "https://www.mdpi.com/1424-8220/24/13/4257/pdf",
+            "volume": "24",
+            "pages": "4257",
+            "publicationTitle": "Sensors",
+            "issue": "13",
+            "creators": [
+                {
+                    "firstName": "Dhirendra Prasad",
+                    "lastName": "Yadav",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Bhisham",
+                    "lastName": "Sharma",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Shivank",
+                    "lastName": "Chauhan",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Imed Ben",
+                    "lastName": "Dhaou",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "attention",
+                    "type": 1
+                },
+                {
+                    "tag": "binary-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "concrete-crack",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "hybrid-architecture",
+                    "type": 1
+                },
+                {
+                    "tag": "no-code-found",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:14Z",
+            "dateModified": "2026-08-30T00:06:14Z"
+        }
+    },
+    {
+        "key": "WII7ZDKS",
+        "version": 44,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/WII7ZDKS",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/WII7ZDKS",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Ye et al.",
+            "parsedDate": "2024",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "WII7ZDKS",
+            "version": 44,
+            "itemType": "journalArticle",
+            "title": "An Improved Transformer-Based Concrete Crack Classification Method",
+            "date": "2024",
+            "DOI": "10.1038/s41598-024-54835-x",
+            "url": "https://www.nature.com/articles/s41598-024-54835-x.pdf",
+            "volume": "14",
+            "pages": "6226",
+            "publicationTitle": "Scientific Reports",
+            "creators": [
+                {
+                    "firstName": "Guanting",
+                    "lastName": "Ye",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Wei",
+                    "lastName": "Dai",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Jintai",
+                    "lastName": "Tao",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Jinsheng",
+                    "lastName": "Qu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Lin",
+                    "lastName": "Zhu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Qiang",
+                    "lastName": "Jin",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "binary-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "concrete-crack",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "no-code-found",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "transformer",
+                    "type": 1
+                },
+                {
+                    "tag": "useful",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:14Z",
+            "dateModified": "2026-08-30T00:06:14Z"
+        }
+    },
+    {
+        "key": "KU57S9P4",
+        "version": 49,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/KU57S9P4",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/KU57S9P4",
+                "type": "text/html"
+            },
+            "attachment": {
+                "href": "http://localhost:23119/api/groups/6634536/items/LRCWVWU3",
+                "type": "application/json",
+                "attachmentType": "application/pdf",
+                "attachmentSize": 8627741
+            }
+        },
+        "meta": {
+            "creatorSummary": "⁨Russel⁩ and ⁨Selvaraj⁩",
+            "parsedDate": "2024",
+            "numChildren": 2
+        },
+        "data": {
+            "key": "KU57S9P4",
+            "version": 49,
+            "itemType": "journalArticle",
+            "title": "MultiScaleCrackNet: A Parallel Multiscale Deep CNN Architecture for Concrete Crack Classification",
+            "date": "2024",
+            "DOI": "10.1016/j.eswa.2024.123658",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0957417424005244",
+            "volume": "249",
+            "pages": "123658",
+            "publicationTitle": "Expert Systems with Applications",
+            "creators": [
+                {
+                    "firstName": "Newlin Shebiah",
+                    "lastName": "Russel",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Arivazhagan",
+                    "lastName": "Selvaraj",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "binary-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "cnn",
+                    "type": 1
+                },
+                {
+                    "tag": "concrete-crack",
+                    "type": 1
+                },
+                {
+                    "tag": "manual-pdf-needed",
+                    "type": 1
+                },
+                {
+                    "tag": "multiscale-features",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "useful",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:14Z",
+            "dateModified": "2026-08-30T00:06:14Z"
+        }
+    },
+    {
+        "key": "RBFNPZW6",
+        "version": 49,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/RBFNPZW6",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/RBFNPZW6",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "⁨Benz⁩ and ⁨Rodehorst⁩",
+            "parsedDate": "2024",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "RBFNPZW6",
+            "version": 49,
+            "itemType": "conferencePaper",
+            "title": "Omni-Crack30k: A Benchmark for Crack Segmentation and the Reasonable Effectiveness of Transfer Learning",
+            "date": "2024",
+            "DOI": "10.1109/CVPRW63382.2024.00392",
+            "url": "https://openaccess.thecvf.com/content/CVPR2024W/VAND/papers/Benz_OmniCrack30k_A_Benchmark_for_Crack_Segmentation_and_the_Reasonable_Effectiveness_CVPRW_2024_paper.pdf",
+            "pages": "3876–3886",
+            "proceedingsTitle": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops",
+            "creators": [
+                {
+                    "firstName": "Christian",
+                    "lastName": "Benz",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Volker",
+                    "lastName": "Rodehorst",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "benchmark",
+                    "type": 1
+                },
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "concrete-crack",
+                    "type": 1
+                },
+                {
+                    "tag": "dataset",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "optional",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "segmentation",
+                    "type": 1
+                },
+                {
+                    "tag": "transfer-learning",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:14Z",
+            "dateModified": "2026-08-30T00:06:14Z"
+        }
+    },
+    {
+        "key": "M9GHNUCF",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/M9GHNUCF",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/M9GHNUCF",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Vaswani et al.",
+            "parsedDate": "2017",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "M9GHNUCF",
+            "version": 24,
+            "itemType": "conferencePaper",
+            "title": "Attention Is All You Need",
+            "date": "2017",
+            "DOI": "10.48550/arXiv.1706.03762",
+            "url": "https://papers.neurips.cc/paper/7181-attention-isall-you-need.pdf",
+            "proceedingsTitle": "Advances in Neural Information Processing Systems",
+            "creators": [
+                {
+                    "firstName": "Ashish",
+                    "lastName": "Vaswani",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Noam",
+                    "lastName": "Shazeer",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Niki",
+                    "lastName": "Parmar",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Jakob",
+                    "lastName": "Uszkoreit",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Llion",
+                    "lastName": "Jones",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Aidan N.",
+                    "lastName": "Gomez",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Lukasz",
+                    "lastName": "Kaiser",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Illia",
+                    "lastName": "Polosukhin",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "attention",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "foundational",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "transformer",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "GH8EIH8C",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/GH8EIH8C",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/GH8EIH8C",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "He et al.",
+            "parsedDate": "2016",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "GH8EIH8C",
+            "version": 24,
+            "itemType": "conferencePaper",
+            "title": "Deep Residual Learning for Image Recognition",
+            "date": "2016",
+            "DOI": "10.1109/CVPR.2016.90",
+            "url": "https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+            "pages": "770–778",
+            "proceedingsTitle": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+            "creators": [
+                {
+                    "firstName": "Kaiming",
+                    "lastName": "He",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Xiangyu",
+                    "lastName": "Zhang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Shaoqing",
+                    "lastName": "Ren",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Jian",
+                    "lastName": "Sun",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "cnn",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "foundational",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "residual-network",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "P62GMGTN",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/P62GMGTN",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/P62GMGTN",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Dosovitskiy et al.",
+            "parsedDate": "2021",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "P62GMGTN",
+            "version": 24,
+            "itemType": "conferencePaper",
+            "title": "An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+            "date": "2021",
+            "DOI": "10.48550/arXiv.2010.11929",
+            "url": "https://arxiv.org/pdf/2010.11929",
+            "proceedingsTitle": "International Conference on Learning Representations",
+            "creators": [
+                {
+                    "firstName": "Alexey",
+                    "lastName": "Dosovitskiy",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Lucas",
+                    "lastName": "Beyer",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Alexander",
+                    "lastName": "Kolesnikov",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Dirk",
+                    "lastName": "Weissenborn",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Xiaohua",
+                    "lastName": "Zhai",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Unterthiner",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Mostafa",
+                    "lastName": "Dehghani",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Matthias",
+                    "lastName": "Minderer",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Georg",
+                    "lastName": "Heigold",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Sylvain",
+                    "lastName": "Gelly",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Jakob",
+                    "lastName": "Uszkoreit",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Neil",
+                    "lastName": "Houlsby",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "foundational",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "vision-transformer",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "CXTFQ3YB",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/CXTFQ3YB",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/CXTFQ3YB",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Touvron et al.",
+            "parsedDate": "2021",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "CXTFQ3YB",
+            "version": 24,
+            "itemType": "conferencePaper",
+            "title": "Training Data-Efficient Image Transformers and Distillation through Attention",
+            "date": "2021",
+            "url": "https://proceedings.mlr.press/v139/touvron21a/touvron21a.pdf",
+            "pages": "10347–10357",
+            "proceedingsTitle": "Proceedings of the 38th International Conference on Machine Learning",
+            "creators": [
+                {
+                    "firstName": "Hugo",
+                    "lastName": "Touvron",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Matthieu",
+                    "lastName": "Cord",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Matthijs",
+                    "lastName": "Douze",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Francisco",
+                    "lastName": "Massa",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Alexandre",
+                    "lastName": "Sablayrolles",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Herve",
+                    "lastName": "Jegou",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "foundational",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "knowledge-distillation",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "transformer",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "GTCI5SK8",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/GTCI5SK8",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/GTCI5SK8",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Liu et al.",
+            "parsedDate": "2021",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "GTCI5SK8",
+            "version": 24,
+            "itemType": "conferencePaper",
+            "title": "Swin Transformer: Hierarchical Vision Transformer Using Shifted Windows",
+            "date": "2021",
+            "DOI": "10.1109/ICCV48922.2021.00986",
+            "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.pdf",
+            "pages": "10012–10022",
+            "proceedingsTitle": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+            "creators": [
+                {
+                    "firstName": "Ze",
+                    "lastName": "Liu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Yutong",
+                    "lastName": "Lin",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Yue",
+                    "lastName": "Cao",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Han",
+                    "lastName": "Hu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Yixuan",
+                    "lastName": "Wei",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Zheng",
+                    "lastName": "Zhang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Lin",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Baining",
+                    "lastName": "Guo",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "hierarchical-attention",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "transformer",
+                    "type": 1
+                },
+                {
+                    "tag": "useful",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "LQT8CXBK",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/LQT8CXBK",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/LQT8CXBK",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Wu et al.",
+            "parsedDate": "2021",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "LQT8CXBK",
+            "version": 24,
+            "itemType": "conferencePaper",
+            "title": "CvT: Introducing Convolutions to Vision Transformers",
+            "date": "2021",
+            "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf",
+            "pages": "22–31",
+            "proceedingsTitle": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+            "creators": [
+                {
+                    "firstName": "Haiping",
+                    "lastName": "Wu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Bin",
+                    "lastName": "Xiao",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Noel",
+                    "lastName": "Codella",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Mengchen",
+                    "lastName": "Liu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Xiyang",
+                    "lastName": "Dai",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Lu",
+                    "lastName": "Yuan",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Lei",
+                    "lastName": "Zhang",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "convolution",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "hybrid-architecture",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "vision-transformer",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "GWUJX2DK",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/GWUJX2DK",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/GWUJX2DK",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Peng et al.",
+            "parsedDate": "2021",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "GWUJX2DK",
+            "version": 24,
+            "itemType": "conferencePaper",
+            "title": "Conformer: Local Features Coupling Global Representations for Visual Recognition",
+            "date": "2021",
+            "DOI": "10.1109/ICCV48922.2021.00042",
+            "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Peng_Conformer_Local_Features_Coupling_Global_Representations_for_Visual_Recognition_ICCV_2021_paper.pdf",
+            "pages": "367–376",
+            "proceedingsTitle": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+            "creators": [
+                {
+                    "firstName": "Zhiliang",
+                    "lastName": "Peng",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Wei",
+                    "lastName": "Huang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Shanzhi",
+                    "lastName": "Gu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Lingxi",
+                    "lastName": "Xie",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Yaowei",
+                    "lastName": "Wang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Jianbin",
+                    "lastName": "Jiao",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Qixiang",
+                    "lastName": "Ye",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "cnn",
+                    "type": 1
+                },
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "feature-fusion",
+                    "type": 1
+                },
+                {
+                    "tag": "hybrid-architecture",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "transformer",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "2KCLWMMZ",
+        "version": 34,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/2KCLWMMZ",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/2KCLWMMZ",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Dai et al.",
+            "parsedDate": "2021",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "2KCLWMMZ",
+            "version": 34,
+            "itemType": "conferencePaper",
+            "title": "CoAtNet: Marrying Convolution and Attention for All Data Sizes",
+            "date": "2021",
+            "DOI": "10.48550/arXiv.2106.04803",
+            "url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/20568692db622456cc42a2e853ca21f8-Paper.pdf",
+            "proceedingsTitle": "Advances in Neural Information Processing Systems",
+            "creators": [
+                {
+                    "firstName": "Zihang",
+                    "lastName": "Dai",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Hanxiao",
+                    "lastName": "Liu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Quoc V.",
+                    "lastName": "Le",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Mingxing",
+                    "lastName": "Tan",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "convolution",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "hybrid-architecture",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "self-attention",
+                    "type": 1
+                },
+                {
+                    "tag": "useful",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "AGUTHS2H",
+        "version": 34,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/AGUTHS2H",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/AGUTHS2H",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Guo et al.",
+            "parsedDate": "2022",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "AGUTHS2H",
+            "version": 34,
+            "itemType": "conferencePaper",
+            "title": "CMT: Convolutional Neural Networks Meet Vision Transformers",
+            "date": "2022",
+            "DOI": "10.1109/CVPR52688.2022.01186",
+            "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Guo_CMT_Convolutional_Neural_Networks_Meet_Vision_Transformers_CVPR_2022_paper.pdf",
+            "pages": "12175–12185",
+            "proceedingsTitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "creators": [
+                {
+                    "firstName": "Jianyuan",
+                    "lastName": "Guo",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Kai",
+                    "lastName": "Han",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Han",
+                    "lastName": "Wu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Yehui",
+                    "lastName": "Tang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Xinghao",
+                    "lastName": "Chen",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Yunhe",
+                    "lastName": "Wang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Chang",
+                    "lastName": "Xu",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "cnn",
+                    "type": 1
+                },
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "hybrid-architecture",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "transformer",
+                    "type": 1
+                },
+                {
+                    "tag": "useful",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "UZT7VV56",
+        "version": 34,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/UZT7VV56",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/UZT7VV56",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "⁨Mehta⁩ and ⁨Rastegari⁩",
+            "parsedDate": "2022",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "UZT7VV56",
+            "version": 34,
+            "itemType": "conferencePaper",
+            "title": "MobileViT: Light-Weight, General-Purpose, and Mobile-Friendly Vision Transformer",
+            "date": "2022",
+            "DOI": "10.48550/arXiv.2110.02178",
+            "url": "https://arxiv.org/pdf/2110.02178",
+            "proceedingsTitle": "International Conference on Learning Representations",
+            "creators": [
+                {
+                    "firstName": "Sachin",
+                    "lastName": "Mehta",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Mohammad",
+                    "lastName": "Rastegari",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "cnn",
+                    "type": 1
+                },
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "essential",
+                    "type": 1
+                },
+                {
+                    "tag": "hybrid-architecture",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "lightweight",
+                    "type": 1
+                },
+                {
+                    "tag": "mobile",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "transformer",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "F38CEX55",
+        "version": 34,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/F38CEX55",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/F38CEX55",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Chen et al.",
+            "parsedDate": "2022",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "F38CEX55",
+            "version": 34,
+            "itemType": "conferencePaper",
+            "title": "Mobile-Former: Bridging MobileNet and Transformer",
+            "date": "2022",
+            "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_Mobile-Former_Bridging_MobileNet_and_Transformer_CVPR_2022_paper.pdf",
+            "pages": "5273–5283",
+            "proceedingsTitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "creators": [
+                {
+                    "firstName": "Yinpeng",
+                    "lastName": "Chen",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Xiyang",
+                    "lastName": "Dai",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Dongdong",
+                    "lastName": "Chen",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Mengchen",
+                    "lastName": "Liu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Xiaoyi",
+                    "lastName": "Dong",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Lu",
+                    "lastName": "Yuan",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Zicheng",
+                    "lastName": "Liu",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "cross-attention",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "hybrid-architecture",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "lightweight",
+                    "type": 1
+                },
+                {
+                    "tag": "mobile",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "useful",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "4YLNLIG8",
+        "version": 34,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/4YLNLIG8",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/4YLNLIG8",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Vasu et al.",
+            "parsedDate": "2023",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "4YLNLIG8",
+            "version": 34,
+            "itemType": "conferencePaper",
+            "title": "FastViT: A Fast Hybrid Vision Transformer Using Structural Reparameterization",
+            "date": "2023",
+            "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Vasu_FastViT_A_Fast_Hybrid_Vision_Transformer_Using_Structural_Reparameterization_ICCV_2023_paper.pdf",
+            "pages": "17421–17432",
+            "proceedingsTitle": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+            "creators": [
+                {
+                    "firstName": "Pavan Kumar Anasosalu",
+                    "lastName": "Vasu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "James",
+                    "lastName": "Gabriel",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Jeff",
+                    "lastName": "Zhu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Oncel",
+                    "lastName": "Tuzel",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Anurag",
+                    "lastName": "Ranjan",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "hybrid-architecture",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "lightweight",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "structural-reparameterization",
+                    "type": 1
+                },
+                {
+                    "tag": "useful",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "8XFL6FCR",
+        "version": 34,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/8XFL6FCR",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/8XFL6FCR",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "Liu et al.",
+            "parsedDate": "2023",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "8XFL6FCR",
+            "version": 34,
+            "itemType": "conferencePaper",
+            "title": "EfficientViT: Memory Efficient Vision Transformer with Cascaded Group Attention",
+            "date": "2023",
+            "url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_EfficientViT_Memory_Efficient_Vision_Transformer_With_Cascaded_Group_Attention_CVPR_2023_paper.pdf",
+            "pages": "14420–14430",
+            "proceedingsTitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+            "creators": [
+                {
+                    "firstName": "Xinyu",
+                    "lastName": "Liu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Houwen",
+                    "lastName": "Peng",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Ningxin",
+                    "lastName": "Zheng",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Yuqing",
+                    "lastName": "Yang",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Han",
+                    "lastName": "Hu",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Yixuan",
+                    "lastName": "Yuan",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "efficient-attention",
+                    "type": 1
+                },
+                {
+                    "tag": "image-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "lightweight",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "useful",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "HKLMLZIF",
+        "version": 44,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/HKLMLZIF",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/HKLMLZIF",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "creatorSummary": "El-Assiouti et al.",
+            "parsedDate": "2025",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "HKLMLZIF",
+            "version": 44,
+            "itemType": "journalArticle",
+            "title": "CTRL-F: Pairing Convolution with Transformer for Image Classification via Multi-Level Feature Cross-Attention and Representation Learning Fusion",
+            "date": "2025",
+            "DOI": "10.1016/j.engappai.2025.111076",
+            "url": "https://arxiv.org/pdf/2407.06673",
+            "volume": "156",
+            "pages": "111076",
+            "publicationTitle": "Engineering Applications of Artificial Intelligence",
+            "creators": [
+                {
+                    "firstName": "Hosam S.",
+                    "lastName": "El-Assiouti",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Hadeer",
+                    "lastName": "El-Saadawy",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Maryam N.",
+                    "lastName": "Al-Berry",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Mohamed F.",
+                    "lastName": "Tolba",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "advanced",
+                    "type": 1
+                },
+                {
+                    "tag": "code-available",
+                    "type": 1
+                },
+                {
+                    "tag": "cross-attention",
+                    "type": 1
+                },
+                {
+                    "tag": "direct-pdf",
+                    "type": 1
+                },
+                {
+                    "tag": "hybrid-architecture",
+                    "type": 1
+                },
+                {
+                    "tag": "low-data-classification",
+                    "type": 1
+                },
+                {
+                    "tag": "phase1-screened",
+                    "type": 1
+                },
+                {
+                    "tag": "useful",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-30T00:06:13Z",
+            "dateModified": "2026-08-30T00:06:13Z"
+        }
+    },
+    {
+        "key": "EHU23BPQ",
+        "version": 11,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/EHU23BPQ",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/EHU23BPQ",
+                "type": "text/html"
+            },
+            "attachment": {
+                "href": "http://localhost:23119/api/groups/6634536/items/6YT6KZXI",
+                "type": "application/json",
+                "attachmentType": "application/pdf",
+                "attachmentSize": 7966738
+            }
+        },
+        "meta": {
+            "creatorSummary": "Mohagheghi et al.",
+            "parsedDate": "2026-04",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "EHU23BPQ",
+            "version": 11,
+            "itemType": "journalArticle",
+            "title": "Intelligent Eyes on Buildings: A Scientometric Mapping and Systematic Review of AI-Based Crack Detection and Predictive Diagnostics of Building Structures",
+            "abstractNote": "Artificial Intelligence (AI)-based crack detection in buildings uses computer vision and deep learning to automatically identify structural cracks from inspection images. In recent years, many studies have explored this topic, but the overall development of the field, its methodological practices, and the remaining challenges are still not fully clear. Unlike most previous reviews that focus mainly on technical methods, this study combines a large-scale scientometric mapping of the research field with a focused technical analysis of recent AI-based crack detection methods specifically applied to building structures. This study therefore provides a dual-layer review covering research published between 2015 and 2025. A total of 146 Scopus-indexed publications were analysed using Visualization of Similarities viewer (VOSviewer) to examine publication growth, thematic evolution, collaboration patterns, and citation structures. In addition, a focused technical review of 36 highly relevant studies was carried out to analyse task formulations, model families, datasets, evaluation protocols, and methodological practices. The results show a rapid increase in research activity after 2020, largely driven by advances in deep-learning and Unmanned Aerial Vehicle (UAV)-based inspections. At the same time, collaboration networks remain uneven, and citation influence is concentrated in a limited number of research communities. The technical review further shows that most studies focus on detection-level tasks, particularly You Only Look Once (YOLO)-based models, while predictive diagnostics, automated inspection reporting, and decision-oriented Structural Health Monitoring (SHM) are still rarely addressed. Current datasets and evaluation protocols also remain mostly perception-oriented, which makes it difficult to assess robustness, generalisability and long-term predictive capability.",
+            "date": "2026/4",
+            "DOI": "10.3390/encyclopedia6040075",
+            "url": "https://www.mdpi.com/2673-8392/6/4/75",
+            "accessDate": "2026-08-09T17:41:53Z",
+            "shortTitle": "Intelligent Eyes on Buildings",
+            "language": "en",
+            "libraryCatalog": "www.mdpi.com",
+            "rights": "http://creativecommons.org/licenses/by/3.0/",
+            "volume": "6",
+            "publisher": "Multidisciplinary Digital Publishing Institute",
+            "pages": "75",
+            "publicationTitle": "Encyclopedia",
+            "ISSN": "2673-8392",
+            "issue": "4",
+            "creators": [
+                {
+                    "firstName": "Mehdi",
+                    "lastName": "Mohagheghi",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Ali",
+                    "lastName": "Bahadori-Jahromi",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Shah",
+                    "lastName": "Room",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "deep learning",
+                    "type": 1
+                },
+                {
+                    "tag": "AI",
+                    "type": 1
+                },
+                {
+                    "tag": "building inspection",
+                    "type": 1
+                },
+                {
+                    "tag": "computer vision",
+                    "type": 1
+                },
+                {
+                    "tag": "crack detection",
+                    "type": 1
+                },
+                {
+                    "tag": "predictive diagnostics",
+                    "type": 1
+                },
+                {
+                    "tag": "scientometric analysis",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-09T17:41:53Z",
+            "dateModified": "2026-08-09T17:41:53Z"
+        }
+    },
+    {
+        "key": "2CJMWDZT",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 6634536,
+            "name": "major project",
+            "links": {
+                "self": {
+                    "href": "http://localhost:23119/api/groups/6634536",
+                    "type": "application/json"
+                },
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/6634536",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "http://localhost:23119/api/groups/6634536/items/2CJMWDZT",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/6634536/items/2CJMWDZT",
+                "type": "text/html"
+            },
+            "attachment": {
+                "href": "http://localhost:23119/api/groups/6634536/items/ENIG2E5X",
+                "type": "application/json",
+                "attachmentType": "application/pdf",
+                "attachmentSize": 747824
+            }
+        },
+        "meta": {
+            "creatorSummary": "Khan et al.",
+            "parsedDate": "2026-03-05",
+            "numChildren": 1
+        },
+        "data": {
+            "key": "2CJMWDZT",
+            "version": 5,
+            "itemType": "journalArticle",
+            "title": "Artificial intelligence-driven intelligent concrete crack detection and real-time width estimation for smart structural health monitoring systems: A review",
+            "abstractNote": "It is partly the concrete infrastructure degradation (mainly crack formation and crack propagation) that is one of the most significant challenges facing the contemporary civil engineering. The traditional inspection procedures, which are based on a regular manual survey, non-destructive testing (NDT) guidelines, and an elementary image processing pipeline, have proven their constant incapacity to achieve sensitivity, scalability, and real-time reactivity. This combination of deep learning, computer vision, and embedded edge computing has also been the driving force behind a paradigmatic shift to the creation of intelligent, autonomous structural health monitoring (SHM) systems with the capability to operate in continuous, high-fidelity crack detection and quantitative width measurements. The present paper is a critical, interdisciplinary survey of the current state-of-the-art in AI-driven concrete crack detection that includes the following architectures, object detectors, semantic segmenters and detectors, and emergent paradigms of vision transformer (ViT) and vision-language paradigms (CLIP). Specific analytical focus is given to real-time crack width estimation techniques - such as pixel-to-millimetre calibration, stereo vision triangulation, laser profilometry, and Structure-from-Motion (SfM) 3D reconstruction techniques and their corresponding error metrics and deployment limits. The review also discusses how these AI components are integrated into smart SHM systems, which include edge AI systems, IoT data pipelines, cloud-edge hybrid systems, drone-based inspection systems, and digital twin systems. The critical research gaps that have been observed are lack of standardised benchmark datasets, lack of rigorously validated real time deployment studies, lack of cross-domain model generalisation, and unsolved hardware-software co-design issues.",
+            "date": "2026-03-05",
+            "DOI": "10.70593/deepsci.0202024",
+            "url": "https://www.deepscipub.com/ijars/article/view/52",
+            "accessDate": "2026-08-09T17:41:09Z",
+            "shortTitle": "Artificial intelligence-driven intelligent concrete crack detection and real-time width estimation for smart structural health monitoring systems",
+            "language": "en",
+            "libraryCatalog": "www.deepscipub.com",
+            "rights": "Copyright (c) 2026 Mohammed Shakeebulla  Khan, Adinath Rajendra  Puri, Rosy  Pradhan (Author)",
+            "volume": "2",
+            "pages": "618-630",
+            "publicationTitle": "International Journal of Applied Resilience and Sustainability",
+            "ISSN": "3108-1622",
+            "issue": "2",
+            "creators": [
+                {
+                    "firstName": "Mohammed Shakeebulla",
+                    "lastName": "Khan",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Adinath Rajendra",
+                    "lastName": "Puri",
+                    "creatorType": "author"
+                },
+                {
+                    "firstName": "Rosy",
+                    "lastName": "Pradhan",
+                    "creatorType": "author"
+                }
+            ],
+            "tags": [
+                {
+                    "tag": "Convolutional neural networks",
+                    "type": 1
+                },
+                {
+                    "tag": "Deep learning",
+                    "type": 1
+                },
+                {
+                    "tag": "Crack detection",
+                    "type": 1
+                },
+                {
+                    "tag": "Semantic segmentation",
+                    "type": 1
+                },
+                {
+                    "tag": "Structural health monitoring",
+                    "type": 1
+                },
+                {
+                    "tag": "Vision transformers",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2026-08-09T17:41:09Z",
+            "dateModified": "2026-08-09T17:41:09Z"
+        }
+    }
+]

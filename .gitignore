@@ -1,0 +1,11 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Local dataset and generated training artifacts
+dataset/*.zip
+dataset/*_extracted/
+data/
+outputs/
+
