@@ -29,7 +29,7 @@ Terminology for the presentation: call the model **MobileViT** or **MobileViT-XS
 
 ## 2. What the existing research fixes for us
 
-The local [Phase 2 synthesis](phase2_synthesis.md) and [Phase 3 methodology](output/pdf/phase3_crackfusion_methodology.pdf) already establish these constraints:
+The local [Phase 2 synthesis](phase2_synthesis.md) and [Phase 3 methodology](phase3_crackfusion_methodology.pdf) already establish these constraints:
 
 - Task: binary crack/no-crack image classification, not segmentation or crack-width estimation.
 - Main dataset: SDNET2018, with 56,092 tiles derived from only 230 photographs across deck, wall, and pavement surfaces.

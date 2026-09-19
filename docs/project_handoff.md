@@ -43,7 +43,7 @@ All 22 top-level records in the `major project` group were reviewed individually
 
 ### Phase 3 — complete
 
-The user explicitly approved Phase 3 on 2026-08-30. The Phase 2 evidence was re-validated against the primary papers and Zotero metadata, and the completed IEEE-style methodology is available at [`output/pdf/phase3_crackfusion_methodology.pdf`](output/pdf/phase3_crackfusion_methodology.pdf).
+The user explicitly approved Phase 3 on 2026-08-30. The Phase 2 evidence was re-validated against the primary papers and Zotero metadata, and the completed IEEE-style methodology is available at [`phase3_crackfusion_methodology.pdf`](phase3_crackfusion_methodology.pdf).
 
 - Final PDF: 11 A4 pages, approximately 5,600 words.
 - Citations: 24 numbered IEEE-style references, all cited in the text.
