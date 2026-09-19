@@ -31,8 +31,8 @@ from reportlab.platypus import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "docs" / "phase3_crackfusion_methodology.pdf"
-ITEMS_JSON = ROOT / "sources" / "phase3_zotero_items.json"
+OUT = ROOT / "docs" / "methodology.pdf"
+ITEMS_JSON = ROOT / "sources" / "zotero_snapshot.json"
 
 PAGE_W, PAGE_H = A4
 MARGIN_X = 15 * mm

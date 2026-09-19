@@ -1,47 +1,56 @@
 # CrackFusion-Tiny
 
-A compact CNN–Transformer research project for concrete-crack image classification.
+CrackFusion-Tiny is a compact CNN–Transformer study for binary concrete-crack
+classification. The project compares a pretrained MobileViT-XS reference with a
+custom model that exposes separate local-convolution and global-attention branches.
 
-The project uses a pretrained MobileViT-XS baseline as the first implementation step, then investigates an explicit local-convolution/global-attention fusion model under source-aware evaluation. The primary dataset is SDNET2018.
+The primary dataset is SDNET2018. Current MobileViT measurements use a preliminary
+tile-level development split and may contain parent-photograph leakage. They are
+pipeline checks, not research-valid test results.
 
-## Status
+## Repository structure
 
-- Stages 1–5: MobileViT smoke test, SDNET2018 audit, development training, presentation artifacts, and architecture inspection notebooks.
-- Phase 3: methodology PDF for the proposed CrackFusion-Tiny study.
-- Custom model: [`notebooks/06_crackfusion_tiny_implementation.ipynb`](notebooks/06_crackfusion_tiny_implementation.ipynb) contains the complete scratch-trained architecture, executable software checks, and opt-in manifest-based training/evaluation.
-- Research-valid parent-photo mapping and source-separated evaluation: still pending.
+```text
+docs/          Literature review, experimental protocol, and methodology
+notebooks/     Data preparation, baselines, model development, and analysis
+scripts/       Reproducible document generation
+sources/       Literature metadata snapshot
+src/           Importable CrackFusion-Tiny model
+dataset/       Local dataset files; ignored by Git
+outputs/       Generated checkpoints, metrics, and figures; ignored by Git
+```
 
-Results from the current development split are pipeline-validation results only and must not be presented as source-separated research results.
+## Setup
 
-## Run order
+```bash
+python -m pip install -r requirements.txt
+```
 
-Run the notebooks in numerical order:
+Obtain SDNET2018 from the
+[official dataset record](https://digitalcommons.usu.edu/all_datasets/48/).
+Dataset archives and extracted images are intentionally excluded from Git.
 
-1. [`notebooks/01_mobilevit_smoke_test.ipynb`](notebooks/01_mobilevit_smoke_test.ipynb)
-2. [`notebooks/02_sdnet2018_audit_manifest.ipynb`](notebooks/02_sdnet2018_audit_manifest.ipynb)
-3. [`notebooks/03_mobilevit_development_training.ipynb`](notebooks/03_mobilevit_development_training.ipynb)
-4. [`notebooks/04_mobilevit_presentation_artifacts.ipynb`](notebooks/04_mobilevit_presentation_artifacts.ipynb)
-5. [`notebooks/05_mobilevit_architecture_inspection.ipynb`](notebooks/05_mobilevit_architecture_inspection.ipynb)
-6. [`notebooks/06_crackfusion_tiny_implementation.ipynb`](notebooks/06_crackfusion_tiny_implementation.ipynb) — standalone custom model; run all cells for software validation without a dataset. Set dataset paths, parent-ID provenance, and `RUN_TRAINING` for real training. `RUN_TEST` defaults to false.
+Run notebooks from the repository root:
 
-The two combined Colab exports are in [`notebooks/colab/`](notebooks/colab/). Run notebooks from the repository root so their relative `outputs/` paths remain consistent.
+1. [Data audit and manifest](notebooks/01_data_audit.ipynb)
+2. [MobileViT-XS baseline](notebooks/02_mobilevit_baseline.ipynb)
+3. [CrackFusion-Tiny implementation](notebooks/03_crackfusion_tiny.ipynb)
+4. [Evaluation and analysis](notebooks/04_evaluation_and_analysis.ipynb)
 
-The custom notebook follows the Phase 3 tensor widths and has **284,337 trainable parameters (0.284M)**, superseding the preliminary 1–3M estimate. Synthetic checks are not crack-classification results. Full source-separated training and baseline comparisons remain pending. The notebook is self-contained; `scripts/build_crackfusion_notebook.py` regenerates it (and clears saved execution outputs).
+## Research status
 
-The notebooks download or consume SDNET2018 locally. The dataset is intentionally not included in this repository; obtain it from the [official dataset record](https://digitalcommons.usu.edu/all_datasets/48/).
+- Literature review and methodology are complete.
+- The custom CrackFusion-Tiny graph is implemented and software-validated.
+- The prescribed architecture has 284,337 trainable parameters (0.284M); this
+  measured count supersedes the earlier 1–3M planning estimate.
+- Verified parent-photo mapping, source-separated training, matched baselines, and
+  cross-surface evaluation remain pending.
 
-The methodology PDF is at [`docs/phase3_crackfusion_methodology.pdf`](docs/phase3_crackfusion_methodology.pdf). Project decisions and handoff notes are in [`docs/project_handoff.md`](docs/project_handoff.md) and [`docs/mobilevit_build_plan.md`](docs/mobilevit_build_plan.md).
+Synthetic learning checks establish that the code can optimize; they do not measure
+crack-classification accuracy.
 
-## Repository layout
+## Documentation
 
-- `notebooks/` — numbered implementation and analysis notebooks.
-- `notebooks/colab/` — combined convenience exports.
-- `docs/` — research synthesis, methodology, plans, and handoff notes.
-- `scripts/` — reproducible document and notebook builders.
-- `sources/` — literature metadata.
-- `dataset/` — local, ignored SDNET2018 files.
-- `outputs/` — local, ignored experiment results.
-
-## Scope
-
-This repository contains research notebooks, planning documents, literature metadata, and the methodology artifact. It is not yet a packaged training library or deployment service.
+- [Literature review](docs/literature_review.md)
+- [Experimental protocol](docs/experimental_protocol.md)
+- [Methodology](docs/methodology.pdf)

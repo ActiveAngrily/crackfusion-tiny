@@ -1,8 +1,8 @@
-# Phase 2 Literature Synthesis: Compact Conv-Transformer Crack Classification
+# Literature Review: Compact Conv-Transformer Crack Classification
 
 **Completed:** 2026-08-30  
 **Scope:** all 22 top-level records in the Zotero group `major project` (library ID 2; group ID 6634536)  
-**Phase boundary:** this is the paper-by-paper evidence synthesis only. It is not the Phase 3 methodology document and no methodology PDF has been created.
+This review provides the evidence base for the accompanying methodology.
 
 ## 1. Reading and evidence protocol
 
@@ -393,7 +393,7 @@ Reported results below are the papers' own results, not independently reproduced
 - Interpretability is evidence about model behaviour, not proof of causal reasoning. Show correctly classified cracks, false negatives, and nuisance-driven false positives for both branches.
 - Compare CNN Grad-CAM, Transformer attention rollout, and fused-model output on the same samples. Quantitative localisation is optional unless masks are available.
 
-## 5. Smallest defensible research contribution
+## 5. Proposed research contribution
 
 ### 5.1 Research question
 
@@ -444,7 +444,7 @@ A successful paper could claim:
 
 It should **not** claim field-ready structural diagnosis, crack-width estimation, segmentation performance, universal generalisation, or state of the art based only on a random SDNET crop split.
 
-## 6. Final Phase 2 decisions
+## 6. Design decisions
 
 - **Primary architectural inspiration:** MobileViT for CNN-feature tokenisation and simple map-level fusion.
 - **Scientific fusion reference:** Conformer and CTRL-F, simplified to one fusion point.
@@ -455,4 +455,4 @@ It should **not** claim field-ready structural diagnosis, crack-width estimation
 - **Optional external evidence:** a second classification dataset or carefully defined Omni-Crack subset, only after the core source-separated experiment is stable.
 - **Smallest defensible contribution:** one explicit lightweight local/global fusion plus a rigorous leakage-resistant, cross-surface evaluation—not a large new backbone.
 
-**Phase 2 is complete. Phase 3 remains intentionally unstarted.**
+This review informed the experimental protocol and methodology retained in this repository.

@@ -4,8 +4,9 @@ __pycache__/
 *.py[cod]
 
 # Local dataset and generated training artifacts
-dataset/*.zip
-dataset/*_extracted/
+dataset/
 data/
 outputs/
-
+*.ckpt
+*.pt
+*.pth
