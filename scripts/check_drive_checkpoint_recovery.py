@@ -149,3 +149,20 @@ for path in Path('colab').glob('*.ipynb'):
    ast.parse(''.join(cell['source']),filename=f'{path}:{i}')
    assert not cell['outputs'] and cell['execution_count'] is None
 print('Passed: local/Colab training parity and clean, parseable Colab notebooks.')
+
+# The evaluation notebook reuses training metrics and keeps the positive label explicit.
+evaluation=json.load(open('colab/04_crackfusion_evaluation.ipynb'))
+evaluation_code=''.join(evaluation['cells'][2]['source'])
+training_code=''.join(colab['cells'][10]['source'])
+metric_source=training_code[training_code.index('def binary_metrics'):training_code.index('\n@torch.inference_mode()')]
+assert evaluation_code.startswith(metric_source)
+import numpy as np
+from sklearn.metrics import (accuracy_score, balanced_accuracy_score, precision_score,
+ recall_score, f1_score, confusion_matrix, roc_auc_score, average_precision_score)
+scope=dict(globals())
+exec(metric_source,scope)
+values=scope['binary_metrics']([0,0,1,1],[0.1,0.8,0.2,0.9])
+assert values['confusion_matrix']==[[1,1],[1,1]]
+assert values['macro_f1']==0.5 and values['recall']==0.5
+assert scope['binary_metrics']([0,1],[0.1,0.5])['accuracy']==1.0
+print('Passed: evaluation/training metric parity, confusion labels and threshold boundary.')

@@ -77,4 +77,5 @@ The 3,600-image split is `tile_development_only`; verified parent mapping and fi
 ''')
 audit['metadata'].setdefault('colab', {})['name'] = '01_data_audit_checkpointed.ipynb'
 write('colab/01_data_audit_checkpointed.ipynb', audit)
+write('colab/04_crackfusion_evaluation.ipynb', read('colab/04_crackfusion_evaluation.ipynb'))
 print('Synced model, audit and training entry points; cleared notebook outputs for Git.')

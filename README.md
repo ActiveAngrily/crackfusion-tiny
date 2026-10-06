@@ -46,6 +46,7 @@ The standalone notebooks below match the maintained Drive entry points:
 |---|---|---|
 | [colab/01_data_audit_checkpointed.ipynb](colab/01_data_audit_checkpointed.ipynb) | [Audit in Colab](https://colab.research.google.com/drive/1qrQCrFlZKvlNA9SlGZhm8fH12gjbpDf0) | Audit SDNET2018 and export the development bundle |
 | [colab/03_crackfusion_tiny_checkpointed.ipynb](colab/03_crackfusion_tiny_checkpointed.ipynb) | [Training in Colab](https://colab.research.google.com/drive/1xFijJCpZnLH5HElEEVM0eFk8EQCIUgTj) | Load the bundle and train with resumable epoch checkpoints |
+| [colab/04_crackfusion_evaluation.ipynb](colab/04_crackfusion_evaluation.ipynb) | [Evaluation in Colab](https://colab.research.google.com/drive/1i4N6zCukGXFTKBGnr0aLTaANejmOAecM) | Verify saved predictions and export figures, tables and error examples on CPU |
 
 For the faster workflow, run the local audit in `notebooks/01_data_audit.ipynb`,
 upload `outputs/data_audit/crackfusion_colab_bundle.zip` to the Drive dataset
@@ -55,7 +56,7 @@ folder, and run the Colab training notebook on a T4 GPU. The bundle contains
 Drive's `Fridge/major_project_dataset` contains:
 
 ```text
-colab/                         The two maintained notebook entry points
+colab/                         Maintained audit, training and evaluation notebooks
 DATA_Maguire_20180517_ALL.zip    Original dataset archive for reproducibility
 SDNET2018/                     Extracted dataset, original readme, and extraction state
 crackfusion_colab_bundle.zip    Bundle consumed by the current training run
@@ -65,6 +66,14 @@ outputs/crackfusion_tiny/       Run configurations, checkpoints, predictions and
 
 Keep dataset and output paths unchanged while a run is active. Colab file IDs
 stay stable when notebooks are moved into the `colab` folder.
+
+After notebook 03 completes, run all cells in `colab/04_crackfusion_evaluation.ipynb`.
+Its default run is `run_4d1bf234e5ee01bc`; change `RUN_NAME` for another completed
+development run. It also runs locally from the repository when the same run files
+are present in `outputs/crackfusion_tiny`. Reports save to that run's `evaluation/`
+folder. Results reproduce saved predictions at the training threshold, with
+separate seed curves and surface metrics, PNG/PDF plots and seed-42 error examples.
+The original notebook 04 remains the MobileViT baseline analysis entry point.
 
 ### Maintaining notebook consistency
 
