@@ -243,8 +243,11 @@ audit diagnostic and intentionally reports that currently reproduced defect.
 - All four Drive notebook cell sources were read back and matched their repository
   copies. Existing audit/CrackFusion/evaluation IDs were retained; MobileViT was added.
 
-Colab currently refuses GPU allocation because this account has reached its GPU usage
-limit; a CUDA preflight and long training must wait for GPU availability.
+The same MobileViT preflight also passed in Colab on CPU; its report was read back
+from Drive and confirms 2,880/720 audited images, 1,933,233 parameters, checkpoint
+round-trip success and experiment_training_started=false. Colab refuses GPU allocation
+because this account has reached its GPU usage limit; CUDA verification and long
+training must wait for GPU availability.
 
 No long MobileViT training was started. Verified parent mapping, final source-separated
 splits, matched models, full ablation results, held-out surfaces, parent-cluster
