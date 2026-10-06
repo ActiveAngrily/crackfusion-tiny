@@ -1,111 +1,82 @@
 # CrackFusion-Tiny
 
-CrackFusion-Tiny is a compact CNN–Transformer study for binary concrete-crack
-classification. The project compares a pretrained MobileViT-XS reference with a
-custom model that exposes separate local-convolution and global-attention branches.
+Compact CNN–Transformer concrete-crack classification using SDNET2018. The implemented
+model has **284,337 parameters**; pretrained MobileViT-XS is the practical reference.
+Current experiments use **3,600 development tiles (2,880 train / 720 validation)**.
+Parent-photo separation is unverified. Completed three-seed CrackFusion run
+`run_4d1bf234e5ee01bc` is preserved.
 
-The primary dataset is SDNET2018. Current development experiments use a preliminary
-tile-level development split and may contain parent-photograph leakage. They are
-pipeline checks, not research-valid test results.
+## One workflow, locally or in Colab
 
-## Repository structure
+| Notebook | Purpose | Drive copy |
+|---|---|---|
+| [01 — Data audit](notebooks/01_data_audit.ipynb) | Local/Colab audit and portable bundle | [Open](https://colab.research.google.com/drive/1qrQCrFlZKvlNA9SlGZhm8fH12gjbpDf0) |
+| [02 — MobileViT training](notebooks/02_mobilevit_train.ipynb) | Pretrained reference, preflight and resumable training | [Open](https://colab.research.google.com/drive/1DxxT13Ckrv1XK8ZYzXAAZvkcDa6ic9Rk) |
+| [03 — CrackFusion training](notebooks/03_crackfusion_train.ipynb) | Standalone model, preflight and resumable training | [Open](https://colab.research.google.com/drive/1xFijJCpZnLH5HElEEVM0eFk8EQCIUgTj) |
+| [04 — Evaluation and comparison](notebooks/04_evaluation_and_comparison.ipynb) | Either model, paired predictions, figures, optional architecture inspection | [Open](https://colab.research.google.com/drive/1i4N6zCukGXFTKBGnr0aLTaANejmOAecM) |
 
-```text
-docs/          Literature review, experimental protocol, and methodology
-notebooks/     Data preparation, baselines, model development, and analysis
-colab/         Standalone audit and checkpointed training for Google Colab
-scripts/       Notebook synchronization, recovery checks, and document generation
-sources/       Literature metadata snapshot
-src/           Importable CrackFusion-Tiny model
-dataset/       Local dataset files; ignored by Git
-outputs/       Generated checkpoints, metrics, and figures; ignored by Git
-```
+All notebooks contain their runtime code; Colab needs no clone or `src/` import.
+Select T4 for training and CPU for evaluation. Both trainers default to
+`RUN_TRAINING=False`: run preparation checks, then enable training explicitly.
+MobileViT uses five head epochs and up to 50 fine-tuning epochs for each of three
+seeds, with early stopping; CrackFusion uses up to 100 epochs per seed.
 
-## Setup
+For local use:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-Obtain SDNET2018 from the
-[official dataset record](https://digitalcommons.usu.edu/all_datasets/48/).
-Dataset archives and extracted images are intentionally excluded from Git.
+The notebooks find the repository from its root or `notebooks/`. Put the official
+archive at `dataset/DATA_Maguire_20180517_ALL.zip`; the audit locates the extracted
+six folders. Obtain data from the [official SDNET2018 record](https://digitalcommons.usu.edu/all_datasets/48/).
 
-Run notebooks from the repository root:
+After local auditing, upload `outputs/data_audit/crackfusion_colab_bundle.zip` to
+`MyDrive/Fridge/major_project_dataset`, and retain accompanying audit evidence under
+`outputs/data_audit` there. Trainers cache images on Colab disk and verify all their
+hashes. Dataset paths and completed output folders stay stable.
 
-1. [Data audit and manifest](notebooks/01_data_audit.ipynb)
-2. [MobileViT-XS baseline](notebooks/02_mobilevit_baseline.ipynb)
-3. [CrackFusion-Tiny implementation](notebooks/03_crackfusion_tiny.ipynb)
-4. [Evaluation and analysis](notebooks/04_evaluation_and_analysis.ipynb)
-
-## Colab and Drive workflow
-
-The standalone notebooks below match the maintained Drive entry points:
-
-| Repository notebook | Drive notebook | Purpose |
-|---|---|---|
-| [colab/01_data_audit_checkpointed.ipynb](colab/01_data_audit_checkpointed.ipynb) | [Audit in Colab](https://colab.research.google.com/drive/1qrQCrFlZKvlNA9SlGZhm8fH12gjbpDf0) | Audit SDNET2018 and export the development bundle |
-| [colab/03_crackfusion_tiny_checkpointed.ipynb](colab/03_crackfusion_tiny_checkpointed.ipynb) | [Training in Colab](https://colab.research.google.com/drive/1xFijJCpZnLH5HElEEVM0eFk8EQCIUgTj) | Load the bundle and train with resumable epoch checkpoints |
-| [colab/04_crackfusion_evaluation.ipynb](colab/04_crackfusion_evaluation.ipynb) | [Evaluation in Colab](https://colab.research.google.com/drive/1i4N6zCukGXFTKBGnr0aLTaANejmOAecM) | Verify saved predictions and export figures, tables and error examples on CPU |
-
-For the faster workflow, run the local audit in `notebooks/01_data_audit.ipynb`,
-upload `outputs/data_audit/crackfusion_colab_bundle.zip` to the Drive dataset
-folder, and run the Colab training notebook on a T4 GPU. The bundle contains
-3,600 development images (2,880 train / 720 validation), not the full dataset.
-
-Drive's `Fridge/major_project_dataset` contains:
+## Repository layout
 
 ```text
-colab/                         Maintained audit, training and evaluation notebooks
-DATA_Maguire_20180517_ALL.zip    Original dataset archive for reproducibility
-SDNET2018/                     Extracted dataset, original readme, and extraction state
-crackfusion_colab_bundle.zip    Bundle consumed by the current training run
-outputs/data_audit/             Audit evidence and portable manifests
-outputs/crackfusion_tiny/       Run configurations, checkpoints, predictions and metrics
+notebooks/             Four primary standalone local/Colab notebooks
+docs/literature/       Synthesis, evidence and reference metadata
+docs/planning/         Protocol, methodology PDF and codebase audit
+scripts/              Notebook preparation, checks and PDF generation
+dataset/              Local data; ignored by Git
+outputs/              Audit, runs, reports and migration snapshot; ignored by Git
 ```
 
-Keep dataset and output paths unchanged while a run is active. Colab file IDs
-stay stable when notebooks are moved into the `colab` folder.
+Drive retains `Fridge/major_project_dataset/colab` and existing notebook IDs. Results
+save beside the dataset under `outputs/crackfusion_tiny` or `outputs/mobilevit_baseline`.
+Notebook 04 exports into each run's `evaluation/`. Set its explicit `MOBILEVIT_RUN_NAME`
+after training to export paired comparisons. Checkpoints, histories, random states,
+predictions and metrics save atomically; recovery restarts any incomplete epoch.
 
-After notebook 03 completes, run all cells in `colab/04_crackfusion_evaluation.ipynb`.
-Its default run is `run_4d1bf234e5ee01bc`; change `RUN_NAME` for another completed
-development run. It also runs locally from the repository when the same run files
-are present in `outputs/crackfusion_tiny`. Reports save to that run's `evaluation/`
-folder. Results reproduce saved predictions at the training threshold, with
-separate seed curves and surface metrics, PNG/PDF plots and seed-42 error examples.
-The original notebook 04 remains the MobileViT baseline analysis entry point.
+## Maintaining notebooks
 
-### Maintaining notebook consistency
-
-Edit model code in `src/crackfusion_tiny.py`, audit code in the local audit
-notebook, and training logic in the Colab training notebook. Then run:
+Edit the model and shared cells in **notebook 03**. Edit model-specific MobileViT
+configuration/transforms in notebook 02 and audit logic in notebook 01. Stable tags
+identify generated cells; preparation fingerprints runnable training recipes.
 
 ```bash
-python scripts/sync_notebooks.py
-python scripts/check_drive_checkpoint_recovery.py
+python scripts/prepare_notebooks.py
+python scripts/check_notebooks.py
+python scripts/build_methodology.py
 ```
 
-The sync command embeds the same model in Colab, regenerates the local training
-entry point and the Colab audit entry point, and strips execution outputs from
-Git copies. Upload changed Colab copies into their existing Drive files; do this
-between runs. Saved runtime outputs may differ, but code cells should match.
-The recovery check covers file safety, audit hashes, AMP recovery control flow,
-and local/Colab code parity; full CUDA behavior needs a live training runtime.
+Checks use small synthetic data for exact epoch recovery, the MobileViT head/full
+transition, threshold consistency, file safety and source parity. Update existing
+Drive notebook IDs between runs. Historical runs retain their provenance; changed
+recipes create separate folders.
 
-## Research status
+## Research documents
 
-- Literature review and methodology are complete.
-- The custom CrackFusion-Tiny graph is implemented and software-validated.
-- The prescribed architecture has 284,337 trainable parameters (0.284M); this
-  measured count supersedes the earlier 1–3M planning estimate.
-- Verified parent-photo mapping, source-separated training, matched baselines, and
-  cross-surface evaluation remain pending.
+- [Literature review](docs/literature/README.md)
+- [Experimental protocol](docs/planning/experimental_protocol.md)
+- [Methodology](docs/planning/methodology.pdf)
+- [Codebase audit and resolution](docs/planning/codebase_audit.md)
 
-Synthetic learning checks establish that the code can optimize; they do not measure
-crack-classification accuracy.
-
-## Documentation
-
-- [Literature review](docs/literature_review.md)
-- [Experimental protocol](docs/experimental_protocol.md)
-- [Methodology](docs/methodology.pdf)
+Parent mapping, grouped final splits, matched baselines, ablations, held-out-surface
+tests and publication profiling remain pending. Current validation results and seed
+spread do not establish generalization to unseen photographs.

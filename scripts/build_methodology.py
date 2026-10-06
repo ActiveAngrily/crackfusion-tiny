@@ -31,8 +31,8 @@ from reportlab.platypus import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "docs" / "methodology.pdf"
-ITEMS_JSON = ROOT / "sources" / "zotero_snapshot.json"
+OUT = ROOT / "docs" / "planning" / "methodology.pdf"
+ITEMS_JSON = ROOT / "docs" / "literature" / "references" / "zotero_snapshot.json"
 
 PAGE_W, PAGE_H = A4
 MARGIN_X = 15 * mm
@@ -272,14 +272,14 @@ def architecture_figure(width=FULL_W, height=335):
     box(d, 320, 145, 170, 72, "Global branch", "Overlapping Conv 3 x 3, s=2\n196 tokens, d=96\n2 encoders, 4 heads", PALE, BLUE)
     arrow(d, 205, 245, 120, 218)
     arrow(d, 225, 245, 405, 218)
-    box(d, 45, 75, 150, 45, "Local projection", "1 x 1 Conv -> 14 x 14 x 96", PALE_TEAL, TEAL)
+    box(d, 45, 75, 150, 45, "Aligned local map", "Average-pool output, no extra conv", PALE_TEAL, TEAL)
     box(d, 320, 75, 170, 45, "Token reshape", "196 x 96 -> 14 x 14 x 96", PALE, BLUE)
     arrow(d, 120, 145, 120, 121)
     arrow(d, 405, 145, 405, 121)
     box(d, 180, 15, 180, 48, "Explicit fusion and head", "Concat -> 1 x 1 Conv -> GAP\nDropout -> binary logit", HexColor("#EEF1FA"), NAVY)
     arrow(d, 120, 75, 215, 63)
     arrow(d, 405, 75, 325, 63)
-    d.add(String(270, 2, "Primary fusion is fixed concat + 1 x 1 convolution; adaptive gating is an ablation.",
+    d.add(String(270, 2, "Primary fusion is fixed concat + 1 x 1 convolution; adaptive gating is optional.",
                  fontName="Helvetica-Oblique", fontSize=7.2, fillColor=MID, textAnchor="middle"))
     return d
 
@@ -302,7 +302,7 @@ def evaluation_figure(width=FULL_W, height=280):
     arrow(d, 260, 188, 105, 157)
     arrow(d, 260, 188, 262, 157)
     arrow(d, 260, 188, 422, 157)
-    box(d, 90, 0, 335, 66, "Joint outcome report", "Balanced accuracy, recall, precision, F1, ROC-AUC, PR-AUC,\ncalibration, parameters, MACs, latency, memory,\nand branch-specific explanations", HexColor("#EEF1FA"), NAVY, body_size=6.5)
+    box(d, 90, 0, 335, 66, "Joint outcome report", "Balanced accuracy, recall, precision, F1, ROC-AUC, average precision,\ncalibration, parameters, MACs, latency, memory,\nand branch-specific explanations", HexColor("#EEF1FA"), NAVY, body_size=6.5)
     arrow(d, 105, 92, 180, 67)
     arrow(d, 262, 92, 262, 67)
     arrow(d, 422, 92, 345, 67)
@@ -395,7 +395,7 @@ def build_story(items):
     # Title page / IEEE first page
     story.append(Spacer(1, 6 * mm))
     story.append(P("Methodology for a Compact Convolution-Transformer Hybrid for Source-Separated Concrete Crack Classification", "PaperTitle"))
-    story.append(P("Major Project - Phase 3 Research Methodology | 30 August 2026", "Subtitle"))
+    story.append(P("Major Project - Research Methodology | Revised 6 October 2026", "Subtitle"))
     story.append(Spacer(1, 2 * mm))
     abstract = (
         "Abstract - This document specifies a reproducible methodology for testing whether explicit fusion of "
@@ -407,8 +407,8 @@ def build_story(items):
         "from only 230 photographs and are strongly imbalanced; therefore, parent-photograph grouping, locked split "
         "manifests, balanced metrics, leave-one-surface-out testing, and cluster-level uncertainty are mandatory. "
         "The study compares parameter-matched CNN-only, Transformer-only, serial hybrid, and fused hybrid models, "
-        "together with a standard ResNet-18 transfer baseline. It reports accuracy, sensitivity, specificity, F1, "
-        "ROC-AUC, PR-AUC, calibration, parameter count, operations, memory, latency, and branch-specific explanations. "
+        "together with a pretrained MobileViT-XS transfer reference. It reports accuracy, sensitivity, specificity, F1, "
+        "ROC-AUC, average precision, calibration, parameter count, operations, memory, latency, and branch-specific explanations. "
         "The contribution is deliberately bounded: controlled evidence about local-global complementarity and "
         "cross-surface generalisation, not a claim of field-ready diagnosis or crack-width estimation."
     )
@@ -416,10 +416,10 @@ def build_story(items):
     story.append(PH("<b>Index Terms -</b> concrete crack classification, convolutional neural network, Vision Transformer, feature fusion, SDNET2018, generalisation, interpretability.", "Abstract"))
     story.append(Spacer(1, 2 * mm))
     status = table([
-        ["Document status", "Proposed methodology; no experimental results are claimed"],
+        ["Document status", "Final-study plan; development validation exists, source-separated results remain pending"],
         ["Primary question", "Does one explicit local-global fusion improve source-separated and cross-surface classification?"],
         ["Primary dataset", "SDNET2018: 56,092 tiles from 230 original photographs"],
-        ["Target model", "CrackFusion-Tiny, approximately 1-3M parameters (exact count to be measured)"],
+        ["Target model", "CrackFusion-Tiny, 284,337 trainable parameters (implemented graph)"],
     ], [38 * mm, FULL_W - 38 * mm], header=False)
     story.append(status)
     story.append(Spacer(1, 5 * mm))
@@ -429,6 +429,8 @@ def build_story(items):
         "explicit fusion site so that causal ablations remain interpretable.", "Callout"))
     story.append(NextPageTemplate("TwoCol"))
     story.append(PageBreak())
+
+    story.append(P("Current implementation and run settings are governed by docs/planning/experimental_protocol.md. The completed three-seed CrackFusion run uses a 3,600-tile development subset (2,880 train and 720 validation) with unverified parent-photo grouping. Those validation-selected results are preliminary; this document specifies the later grouped study, not evidence that it has been completed."))
 
     # I. Introduction
     story.append(S("Introduction", "I"))
@@ -457,7 +459,7 @@ def build_story(items):
     story.append(P("Segmentation, localisation, physical crack-width measurement, structural severity assessment, and operational safety decisions are outside the primary task. They may be future extensions but must not be inferred from binary image labels."))
     story.append(SS("Research question and hypotheses", "B"))
     story.append(PH("<b>RQ:</b> Under parent-source-separated and cross-surface evaluation, does one explicit fusion of lightweight convolutional local features and Transformer global features improve concrete crack classification over parameter-matched single-family baselines?", "BodyNoIndent"))
-    story.append(B("H1: the fused hybrid improves mean parent-cluster F1 and PR-AUC over both matched CNN-only and Transformer-only baselines."))
+    story.append(B("H1: the fused hybrid improves mean parent-cluster F1 and average precision over both matched CNN-only and Transformer-only baselines."))
     story.append(B("H2: parent-grouped performance is lower but more credible than a random tile split because correlated tiles no longer cross partitions."))
     story.append(B("H3: performance drops when deck, wall, or pavement is held out; fusion reduces the average drop relative to matched baselines."))
     story.append(B("H4: the hybrid incurs higher latency than the matched CNN, but remains within the predeclared small-model budget and offers a measurable generalisation benefit."))
@@ -554,13 +556,13 @@ def build_story(items):
     story.append(SS("Optional external stress test", "D"))
     story.append(P("After the SDNET protocol is frozen, one public crack/no-crack dataset may be used as a zero-tuning external test. Label definitions, image source, resolution, and class balance must be documented. External data must not be mixed into training for the primary claim. Omni-Crack30k is segmentation-oriented and should only be converted to classification if the conversion rule is predeclared and preserves its official test subsets."))
     story.append(SS("Preprocessing and augmentation", "E"))
-    story.append(P("Decode RGB, resize the shorter side conservatively, and take a 224 x 224 crop. Estimate channel mean and standard deviation from training images only for scratch models; use ImageNet normalization for pretrained baselines. Validation and test transformations are deterministic."))
+    story.append(P("Decode RGB, resize the shorter side conservatively, and take a 224 x 224 crop. Estimate channel mean and standard deviation from training images only for scratch models; use each official checkpoint's normalization and input configuration for pretrained references. Validation and test transformations are deterministic."))
     story.append(P("Training augmentation is intentionally mild: horizontal and vertical flips, rotations within +/-15 degrees, brightness/contrast jitter within +/-15%, and random resized crop with scale 0.85-1.00. Each operation and probability is logged. Strong erasing or aggressive crops are excluded from the primary recipe because they can remove thin cracks; CutMix/Mixup are reserved for a secondary augmentation ablation inspired by DeiT."))
 
     # V architecture
     story.append(S("Proposed CrackFusion-Tiny Architecture", "V"))
     story.append(SS("Design constraints", "A"))
-    story.append(P("The model must be small enough for a single student to implement, train, and ablate; must expose local and global branch outputs; and must avoid a custom attention operator unless standard attention is measured as a bottleneck. The target is approximately 1-3M trainable parameters and a 14 x 14 token grid. Exact parameters, operations, and latency are reported from the implemented graph rather than estimated in the paper."))
+    story.append(P("The model must be small enough for a single student to implement, train, and ablate; must expose local and global branch outputs; and must avoid a custom attention operator unless standard attention is measured as a bottleneck. The implemented model has 284,337 trainable parameters and a 14 x 14 token grid. Exact parameters, operations, and latency are reported from the implemented graph rather than estimated in the paper."))
     story.append(SS("Shared convolutional stem", "B"))
     story.append(P("A 3 x 3 stride-2 convolution maps the input to 112 x 112 x 32. Two depthwise-separable residual stages downsample to 56 x 56 x 48 and 28 x 28 x 64. Each stage uses depthwise 3 x 3 spatial convolution, pointwise 1 x 1 channel mixing, batch normalisation, GELU, and a projection shortcut only when shape changes. Residual learning follows the optimisation principle established by ResNet, while depthwise local mixing follows lightweight hybrid practice."))
     story.append(Eq("DSConv(X) = Conv_1x1( GELU( BN( DWConv_3x3(X) ) ) )", 1))
@@ -570,23 +572,23 @@ def build_story(items):
     story.append(PH(
         f"An overlapping 3 x 3 stride-2 convolution maps the shared feature map to 14 x 14 x 96, following the "
         f"convolutional-token principle in CvT and MobileViT {cite('LQT8CXBK','UZT7VV56')}. The spatial grid is flattened "
-        "to N=196 tokens of dimension d=96. A learnable two-dimensional positional embedding is added. Two pre-normalised Transformer encoders use four heads, MLP ratio 2, attention dropout 0.1, and stochastic depth no greater than 0.1."))
+        "to N=196 tokens of dimension d=96. A learnable two-dimensional positional embedding is added. Two pre-normalised Transformer encoders use four heads, MLP ratio 2, attention dropout 0.1, and no stochastic-depth operator."))
     story.append(Eq("t_i = vec(F_g[i]) W_e + p_i,    i = 1,...,196", 2))
     story.append(Eq("Attention(Q,K,V) = softmax( Q K^T / sqrt(d_k) ) V", 3))
     story.append(Eq("Z'_l = Z_(l-1) + MSA( LN(Z_(l-1)) );   Z_l = Z'_l + MLP( LN(Z'_l) )", 4))
     story.append(SS("Explicit fusion and classifier", "E"))
     story.append(P("Global tokens are reshaped to 14 x 14 x 96. Local and global maps are concatenated along channels, projected by a 1 x 1 convolution to 128 channels, globally averaged, regularised with dropout 0.2, and mapped to one binary logit. This single fusion point is deliberately simpler than repeated Conformer, Mobile-Former, or CTRL-F coupling."))
     story.append(Eq("F_f = Conv_1x1( concat(F_local, F_global) );   logit = W_c GAP(F_f) + b_c", 5))
-    story.append(P("An adaptive fusion gate is not part of the primary model. It is a prespecified ablation: a channel gate generated from pooled local/global features forms g * F_local + (1-g) * F_global. This prevents the primary claim from depending on an additional mechanism whose gain could be reproduced by ordinary projection weights."))
+    story.append(P("An adaptive fusion gate is not part of the primary model. It is an optional follow-up ablation: a channel gate generated from pooled local/global features forms g * F_local + (1-g) * F_global. This prevents the primary claim from depending on an additional mechanism whose gain could be reproduced by ordinary projection weights."))
 
     story.append(NextPageTemplate("OneCol"))
     story.append(PageBreak())
     story.append(S("Architecture Specification", "VI"))
     story.append(architecture_figure())
-    story.append(Paragraph("Fig. 2. Proposed CrackFusion-Tiny. Tensor sizes are prespecified targets and must be confirmed from the implemented graph.", styles["Caption"]))
+    story.append(Paragraph("Fig. 2. Proposed CrackFusion-Tiny. Tensor sizes match the implemented graph (284,337 parameters).", styles["Caption"]))
     arch_rows = [
         ["Component", "Operation", "Output", "Purpose"],
-        ["Input", "RGB resize/crop", "224 x 224 x 3", "Common input for every model"],
+        ["Input", "RGB resize/crop", "224 x 224 x 3", "Scratch-model input; B0 uses official config"],
         ["Stem 1", "Conv 3 x 3, s=2, 32", "112 x 112 x 32", "Early local edges"],
         ["Stem 2", "DS-residual, s=2, 48", "56 x 56 x 48", "Efficient local hierarchy"],
         ["Stem 3", "DS-residual, s=2, 64", "28 x 28 x 64", "Shared representation"],
@@ -596,22 +598,22 @@ def build_story(items):
         ["Fusion", "Concat + Conv 1 x 1, 128", "14 x 14 x 128", "One inspectable interaction"],
         ["Head", "GAP + dropout 0.2 + linear", "1 logit", "Binary crack probability"],
     ]
-    story.append(Paragraph("TABLE III. PRESPECIFIED CRACKFUSION-TINY TENSOR PLAN", styles["TableCaption"]))
+    story.append(Paragraph("TABLE III. IMPLEMENTED CRACKFUSION-TINY TENSOR PLAN", styles["TableCaption"]))
     story.append(table(arch_rows, [29 * mm, 56 * mm, 34 * mm, FULL_W - 119 * mm]))
     story.append(Spacer(1, 4 * mm))
     story.append(PH(
-        "<b>Implementation gate.</b> If the implemented primary model exceeds 3M parameters or standard attention at "
-        "196 tokens exceeds the declared memory budget, reduce channel width before changing the attention mechanism. "
-        "This preserves the research question and avoids speculative complexity.", "Callout"))
+        "<b>Implementation gate.</b> Preserve the measured 284,337-parameter graph. Matched baselines target "
+        "within +/-10% of this count. Report measured memory and latency, and verify tensor shapes and "
+        "checkpoint recovery before a long run.", "Callout"))
     story.append(NextPageTemplate("TwoCol"))
     story.append(PageBreak())
 
     # VII Baselines and ablations
     story.append(S("Baselines and Ablation Design", "VII"))
     story.append(SS("Baseline families", "A"))
-    story.append(P("All matched models use 224 x 224 input, the same split manifests, loss family, augmentation, training budget, and seed set. Width/depth may be adjusted once before the test is opened to keep trainable parameters within +/-10% of CrackFusion-Tiny."))
+    story.append(P("All matched scratch models use 224 x 224 input, the same split manifests, loss family, augmentation, training budget, and seed set. Width/depth may be adjusted once before the test is opened to keep trainable parameters within +/-10% of CrackFusion-Tiny."))
     for text in [
-        "B0 - ResNet-18 transfer baseline: a recognised ImageNet-pretrained CNN reference. It is reported separately because it is not parameter matched.",
+        "B0 - MobileViT-XS transfer reference: an established ImageNet-pretrained staged hybrid. It is reported separately because it is not parameter matched.",
         "B1 - matched CNN-only: shared stem plus local branch, fusion-width projection, global pooling, and classifier; no tokenisation or attention.",
         "B2 - matched Transformer-only: 16 x 16 raw patches, d=96, two to four encoders as required for matching; no convolution except patch projection.",
         "B3 - serial hybrid: shared stem and Transformer branch followed directly by pooling; no local bypass or explicit fusion.",
@@ -619,12 +621,12 @@ def build_story(items):
     ]:
         story.append(B(text))
     story.append(SS("Focused ablations", "B"))
-    story.append(B("A1: zero, one, or two Transformer encoders; quantifies the minimum useful global depth."))
-    story.append(B("A2: 14 x 14 versus 28 x 28 token grids; tests accuracy against quadratic attention and latency."))
-    story.append(B("A3: fixed equal fusion, concat-plus-projection, and adaptive channel gate."))
-    story.append(B("A4: ordinary learned first convolution versus a fixed high/low-pass filter bank plus learned channels, motivated by MultiScaleCrackNet."))
-    story.append(B("A5: scratch training versus ImageNet transfer for the standard ResNet-18 and, if weights are structurally compatible, a MobileViT reference."))
-    story.append(P("Ablations are hierarchical: A1-A3 are required for the main claim; A4-A5 are secondary and should be omitted if compute is insufficient. This prevents an underpowered sweep from replacing the core controlled comparison."))
+    story.append(B("A1: remove the global branch from H1 to measure global contribution; report its actual parameter count separately from matched B1."))
+    story.append(B("A2: remove the local branch from H1 to measure local contribution; this unexpanded ablation is distinct from matched B3."))
+    story.append(B("A3: compare H1 against the already trained serial B3; reuse that experiment to test parallel versus serial composition."))
+    story.append(B("A4: optional adaptive channel gating versus concat fusion, after the core branch-removal and serial comparisons."))
+    story.append(B("Additional attention-depth, token-grid, fixed-filter and scratch/transfer sweeps are optional future experiments."))
+    story.append(P("Ablations are hierarchical: A1-A3 are required for the main claim; A4 and additional sweeps are secondary and should be omitted if compute is insufficient. This prevents an underpowered sweep from replacing the core controlled comparison."))
     story.append(SS("Parameter matching and fairness", "C"))
     story.append(P("Matching is performed on trainable parameter count, with MACs and latency reported rather than forced equal. The test set remains sealed while widths are adjusted. Every baseline receives an equal hyperparameter-search budget; the same settings need not be forced if that would systematically disadvantage one architecture. Search spaces and trial counts are published."))
 
@@ -639,7 +641,7 @@ def build_story(items):
     story.append(SS("Hyperparameter selection", "C"))
     story.append(P("A small equal-budget search is allowed over learning rate {1e-3, 3e-4, 1e-4}, weight decay {1e-4, 1e-2, 5e-2}, and dropout {0.0, 0.1, 0.2}. Use successive narrowing rather than a full 27-cell grid: screen learning rate with fixed defaults, then weight decay, then dropout. Selection uses validation macro-F1 averaged across two provisional seeds; final reporting uses all three seeds. No test result may influence selection."))
     story.append(SS("Transfer-learning reference", "D"))
-    story.append(P("For ResNet-18, replace the ImageNet classifier, train the new head for five epochs with the backbone frozen, then fine-tune all layers for up to 50 epochs at learning rate 1e-4. This model is a practical reference, not a matched causal baseline. If a pretrained MobileViT reference is included, use its official input normalisation and publish exactly which layers and checkpoints were loaded."))
+    story.append(P("For MobileViT-XS, load the official mobilevit_xs.cvnets_in1k weights, replace the classifier with one logit, and train the head for five epochs at 1e-3 with the backbone and BatchNorm frozen. Fine-tune all layers for up to 50 epochs at 1e-4, with five full-phase warm-up epochs and cosine decay. Use three seeds, effective batch 64, weight decay 1e-2 and validation macro-F1 selection; patience 15 applies after 30 total epochs. Use the official 256-pixel preprocessing and normalization. This reference differs from the matched scratch budget and cannot establish a causal fusion effect."))
     story.append(SS("Decision threshold", "E"))
     story.append(P("Report performance at the default probability threshold 0.5. A secondary operating point may be selected on validation data to maximise F1 or to achieve a predeclared minimum recall; label it clearly. The threshold is then frozen before any test prediction."))
 
@@ -648,7 +650,7 @@ def build_story(items):
     story.append(PageBreak())
     story.append(S("Evaluation and Statistical Analysis", "IX"))
     story.append(SS("Predictive metrics", "A"))
-    story.append(P("The primary metrics are crack-class recall, F1, PR-AUC, and balanced accuracy. Accuracy, precision, specificity, ROC-AUC, negative predictive value, confusion matrices, and per-surface metrics are also reported. PR-AUC receives equal prominence to ROC-AUC because cracks are the minority class."))
+    story.append(P("The primary metrics are crack-class recall, F1, average precision, and balanced accuracy. Accuracy, precision, specificity, ROC-AUC, negative predictive value, confusion matrices, and per-surface metrics are also reported. average precision receives equal prominence to ROC-AUC because cracks are the minority class."))
     metric_rows = [
         ["Metric", "Definition / reporting role"],
         ["Recall", "TP / (TP + FN); missed-crack sensitivity"],
@@ -656,7 +658,7 @@ def build_story(items):
         ["Specificity", "TN / (TN + FP); nuisance rejection"],
         ["F1", "2PR / (P + R); thresholded minority balance"],
         ["Balanced acc.", "0.5 x (recall + specificity)"],
-        ["PR-AUC", "Threshold-free precision-recall quality under imbalance"],
+        ["average precision", "Non-interpolated average precision from sklearn; not trapezoidal PR-AUC"],
         ["ROC-AUC", "Threshold-free rank discrimination"],
     ]
     story.append(Paragraph("TABLE IV. CORE PREDICTIVE METRICS", styles["TableCaption"]))
@@ -669,20 +671,20 @@ def build_story(items):
     story.append(SS("Efficiency", "D"))
     story.append(P("Report trainable parameters, model file size, MACs/FLOPs at 224 x 224, peak training and inference memory, and wall-clock latency. Measure batch-1 and batch-32 latency after 100 warm-up iterations over at least 1,000 timed inferences; report median and 95th percentile. Record processor/GPU, precision, framework, versions, threads, power mode, and input pipeline. The same preprocessing and synchronization rule applies to all models."))
     story.append(SS("Generalisation scorecard", "E"))
-    story.append(P("For each held-out surface, report absolute metrics and the drop relative to pooled source-separated testing. Summarise mean and worst-surface F1/PR-AUC. A model that improves pooled accuracy but fails the worst surface does not satisfy the contribution claim."))
+    story.append(P("For each held-out surface, report absolute metrics and the drop relative to pooled source-separated testing. Summarise mean and worst-surface F1/average precision. A model that improves pooled accuracy but fails the worst surface does not satisfy the contribution claim."))
 
     story.append(S("Experimental Matrix and Data Flow", "X"))
     exp_rows = [
         ["ID", "Model / change", "Matched?", "Primary question answered"],
-        ["B0", "ImageNet-pretrained ResNet-18", "No", "Practical transfer-learning reference"],
+        ["B0", "ImageNet-pretrained MobileViT-XS", "No", "Practical transfer-learning reference"],
         ["B1", "Small CNN-only local branch", "Yes", "Are local features sufficient?"],
         ["B2", "Tiny raw-patch Transformer", "Yes", "Are global tokens sufficient?"],
         ["B3", "CNN stem -> Transformer, no local bypass", "Yes", "Does serial composition explain the gain?"],
         ["H1", "CrackFusion-Tiny, concat + 1 x 1 fusion", "Yes", "Does explicit local-global fusion help?"],
-        ["A1", "H1 with 0/1/2 Transformer blocks", "Near", "Minimum useful attention depth"],
-        ["A2", "H1 with 14 x 14 vs. 28 x 28 tokens", "No", "Accuracy-efficiency effect of token count"],
-        ["A3", "Fixed, concat, adaptive gated fusion", "Near", "Does fusion mechanism matter?"],
-        ["A4", "Learned vs. fixed-plus-learned edge filters", "Near", "Does a crack-edge prior help?"],
+        ["A1", "H1 without global branch", "No", "Global contribution"],
+        ["A2", "H1 without local branch", "No", "Local contribution"],
+        ["A3", "H1 versus existing B3", "Yes", "Parallel versus serial (reuse B3)"],
+        ["A4", "Concat versus adaptive gate (optional)", "Near", "Does fusion mechanism matter?"],
     ]
     story.append(Paragraph("TABLE V. MINIMUM CONTROLLED EXPERIMENT MATRIX", styles["TableCaption"]))
     story.append(table(exp_rows, [13 * mm, 70 * mm, 21 * mm, FULL_W - 104 * mm]))
@@ -741,7 +743,7 @@ def build_story(items):
     threats = [
         ["Threat", "Mitigation"],
         ["Tile correlation / leakage", "Parent-group manifests; cluster bootstrap; no source overlap"],
-        ["Class imbalance", "Weighted BCE; recall, F1, balanced accuracy, PR-AUC"],
+        ["Class imbalance", "Weighted BCE; recall, F1, balanced accuracy, average precision"],
         ["Surface/domain shift", "Three leave-one-surface-out evaluations; worst-surface score"],
         ["Hyperparameter bias", "Equal search budget; sealed test; publish all trials"],
         ["Compute confounding", "Parameter matching plus measured MACs, latency, memory"],
@@ -751,7 +753,7 @@ def build_story(items):
     ]
     story.append(table(threats, [28 * mm, COL_W - 28 * mm]))
     story.append(SS("Success criteria", "A"))
-    story.append(P("The hybrid hypothesis is supported only if H1 improves parent-cluster F1 and PR-AUC over both matched single-family baselines with paired 95% confidence intervals excluding zero, shows a consistent direction across all three held-out surfaces, and remains within the declared model/latency budget. An accuracy-only gain, a gain confined to one random split, or a gain obtained after test-driven tuning is insufficient."))
+    story.append(P("The hybrid hypothesis is supported only if H1 improves parent-cluster F1 and average precision over both matched single-family baselines with paired 95% confidence intervals excluding zero, shows a consistent direction across all three held-out surfaces, and remains within the declared model/latency budget. An accuracy-only gain, a gain confined to one random split, or a gain obtained after test-driven tuning is insufficient."))
     story.append(P("If H1 fails, the study remains publishable as a careful negative result if the protocol is followed. The correct conclusion would be that a compact CNN is adequate under the tested constraints, not that attention is universally ineffective."))
 
     # XIV schedule
@@ -760,14 +762,14 @@ def build_story(items):
         ["Stage", "Work product", "Exit criterion"],
         ["1. Data audit", "Validated files and parent-level manifest", "No duplicates/corrupt files; split frozen"],
         ["2. Baselines", "B0-B3 trained and profiled", "Stable learning curves; equal search budget"],
-        ["3. Hybrid", "H1 implementation and shape/parameter audit", "Within 1-3M target; deterministic forward pass"],
-        ["4. Ablations", "A1-A3 required; A4-A5 if feasible", "Main mechanisms isolated"],
+        ["3. Hybrid", "H1 implementation and shape/parameter audit", "284,337 parameters; verified shapes and recovery"],
+        ["4. Ablations", "A1-A3 required; A4 and further sweeps optional", "Main mechanisms isolated"],
         ["5. Final tests", "Pooled and three surface-held-out results", "No post-test tuning"],
         ["6. Analysis", "Bootstrap CIs, efficiency, explanations, errors", "All claims traceable to artifacts"],
         ["7. Paper", "IEEE-style manuscript and repository", "Reproducibility checklist complete"],
     ]
     story.append(table(schedule, [20 * mm, 31 * mm, COL_W - 51 * mm]))
-    story.append(P("A single student should prioritise Stages 1-5 and the required A1-A3 ablations. External data, fixed-filter A4, transfer A5, and calibration extensions are secondary. This ordering protects the core contribution from scope growth."))
+    story.append(P("A single student should prioritise Stages 1-5 and the required A1-A3 ablations. External data, gating A4, attention/filter/transfer sweeps and calibration extensions are secondary. This ordering protects the core contribution from scope growth."))
 
     # XV conclusion and traceability share one full-width page.
     story.append(NextPageTemplate("OneCol"))

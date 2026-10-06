@@ -1,7 +1,7 @@
 # Literature Review: Compact Conv-Transformer Crack Classification
 
-**Completed:** 2026-08-30  
-**Scope:** all 22 top-level records in the Zotero group `major project` (library ID 2; group ID 6634536)  
+**Completed:** 2026-08-30\
+**Scope:** all 22 top-level records in the Zotero group `major project` (library ID 2; group ID 6634536)\
 This review provides the evidence base for the accompanying methodology.
 
 ## 1. Reading and evidence protocol
