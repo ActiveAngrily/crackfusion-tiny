@@ -1,0 +1,37 @@
+{
+  "PROTOCOL": "development",
+  "PARENT_ID_PROVENANCE": "",
+  "SEEDS": [
+    42,
+    1337,
+    2026
+  ],
+  "BATCH_SIZE": 16,
+  "EFFECTIVE_BATCH": 64,
+  "MAX_EPOCHS": 100,
+  "WARMUP_EPOCHS": 5,
+  "MIN_EPOCHS": 30,
+  "PATIENCE": 15,
+  "LEARNING_RATE": 0.0003,
+  "WEIGHT_DECAY": 0.01,
+  "THRESHOLD": 0.5,
+  "RUN_TEST": false,
+  "parameters": 284337,
+  "architecture": "CrackFusionTiny-v1",
+  "model_source_sha256": "458720036d0ad57c89715e8afd4383db4e3a39bcfd9be7e3dab141c034a53f38",
+  "torch": "2.11.0+cu130",
+  "torchvision": "0.26.0+cu130",
+  "device": "cuda",
+  "manifest_sha256": "c556b503912fbbc6427b2a173076bb1eee76892ea675f6da62ce8465eba3a6d7",
+  "data_root": "/content/crackfusion_data/dataset/SDNET2018",
+  "mean": [
+    0.6492659121511123,
+    0.6491392989448118,
+    0.6445388313747966
+  ],
+  "std": [
+    0.10445846403676712,
+    0.10497076822590783,
+    0.1109641545375778
+  ]
+}
